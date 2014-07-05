@@ -1,9 +1,14 @@
 class Player
 
-  attr_reader :score
+  attr_reader :bowls
 
   def initialize
-    @score = []
+    @bowls = []
   end
+
+  def bowl(pins)
+    @bowls << pins
+  end
+
 
 end

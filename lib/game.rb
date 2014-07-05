@@ -11,4 +11,10 @@ class Game
     @all_players << @player
   end
 
+  def scoreboard
+    puts @all_players
+
+    @all_players.map { |player| player.bowls }
+  end
+
 end

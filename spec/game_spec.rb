@@ -3,15 +3,15 @@ require './lib/game'
 
 describe 'Game logic' do
 
-  it 'initializes a new game with a single player and an empty bowl tally' do
+  let(:game) { Game.new }
 
-    player = "Toby"
-
-    game = Game.new(player)
-
-    expect(game.bowls).to be_a(Array)
-
+  context 'initialisation' do
+    it 'initializes a new game with a score of 0' do
+      expect(game.score).to eq(0)
+    end
   end
 
+  context 'scoring' do
 
+  end
 end
